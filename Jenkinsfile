@@ -1,8 +1,8 @@
 node{
-  tools{
-  maven 'maven363'
+     tools{
+     maven 'maven363'
   }
-    stage("Checkout"){
+      stage("Checkout"){
 	   git 'git@github.com:Sathish-QA/myProjectJava.git'
 	   }
 	stage("Build"){
