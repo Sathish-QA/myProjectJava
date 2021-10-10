@@ -10,7 +10,7 @@ node{
 	   }
 	stage("Test"){
 	   sh 'mvn test'
-	   junit '**/target/surefire-reports/TEST-*.xml
+	   junit '**/target/surefire-reports/TEST-*.xml'
 	  }
 	stage("Package") {
 	     sh "mvn package"
